@@ -13,9 +13,9 @@ int main()
 {
 	double a, b; //ends of the interval
 	double e; //accuracy
-    double h; //length of subintervals
-    double I1, I2; //integrals
-    double R; //calculation error
+	double h; //length of subintervals
+	double I1, I2; //integrals
+	double R; //calculation error
 	int i, m, e_out, numb_steps, ans = 1, err = 0; //counters
 	while (ans == 1)
 	{
@@ -28,7 +28,7 @@ int main()
 			scanf_s("%lf%lf", &a, &b);
 			printf("desired accuracy (number of digits after the decimal point) -> ");
 			scanf_s("%d", &e_out);
-            //calculate accuracy
+			//calculate accuracy
 			e = 1;
 			for (i = 0; i < e_out; i++)
 			{
@@ -47,7 +47,7 @@ int main()
 		{
 		case 1:
 			//rectangle rule
-            I2 = rectangle(a, b, m);
+			I2 = rectangle(a, b, m);
 			while (R >= e)
 			{
 				I1 = I2;
