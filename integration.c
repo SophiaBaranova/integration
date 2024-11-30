@@ -25,9 +25,9 @@ int main()
 		do
 		{
 			printf("ends of the integration interval (using space) -> ");
-			scanf_s("%lf%lf", &a, &b);
+			scanf("%lf%lf", &a, &b);
 			printf("desired accuracy (number of digits after the decimal point) -> ");
-			scanf_s("%d", &e_out);
+			scanf("%d", &e_out);
 			//calculate accuracy
 			e = 1;
 			for (i = 0; i < e_out; i++)
@@ -42,7 +42,7 @@ int main()
 		numb_steps = 0;
 		//choose the integration method
 		printf("method:\n1 - rectangle rule\n2 - trapezoidal rule\n3 - Simpson's rule\n-> ");
-		scanf_s("%d", &ans);
+		scanf("%d", &ans);
 		switch (ans)
 		{
 		case 1:
@@ -91,7 +91,7 @@ int main()
 			printf("integral I = %.*lf\ncalculation R = %lg\nnumber of steps = %d\n", e_out, I1, R, numb_steps);
 		}
 		printf("continue?\n1 - yes\n2 - no\n-> ");
-		scanf_s("%d", &ans);
+		scanf("%d", &ans);
 	}
 	return 0;
 }
